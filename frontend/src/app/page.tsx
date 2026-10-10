@@ -51,7 +51,7 @@ type CandidatosResponse = {
   listPartidos: string[];
 };
 
-const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL ?? "";
 
 const CARGOS_COM_ESTADO: Cargo[] = [
   'GOVERNADOR',
